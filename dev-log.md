@@ -25,21 +25,12 @@
 
 ### *DESTINATION*
 #### ->Attributes
-* place
-<br>
-
-#### ->Relationships
-* <small>has_many :attractions</small>
-* <small>belongs_to :location</small>
-<br><br>
-
-### *ATTRACTION*
-#### ->Attributes
 * name
+* description
 <br>
 
 #### ->Relationships
-* <small>belongs_to :destination</small>
+* <small>belongs_to :location</small>
 <br><br>
 
 ### *COMMENT*
@@ -60,4 +51,5 @@
 #### ->Relationships
 * <small>belongs_to :user</small><br>
 * <small>belongs_to :destination</small>
+* <small>has_many :destinations</small>?
 <br><br>
